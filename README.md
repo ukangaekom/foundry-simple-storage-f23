@@ -64,3 +64,15 @@ $ forge --help
 $ anvil --help
 $ cast --help
 ```
+
+### How to Deploy
+
+Installing foundry forge-std for deployment on terminal
+
+``` forge install foundry-rs/forge-std --no-commit ```
+
+``` forge create simpleStorage --rpc-url <IP ADDRESS> --interactive```
+
+### How to Deploy with Script 
+
+``` forge script scripts/<Deployment script name>.sol  --rpc-url <RPC URL>```
