@@ -105,3 +105,11 @@ You can check your wallet through
 
 After this you will enter your keystore password.
 
+### Interacting with contracts from the commandline with Cast
+
+Note: You use ```cast``` to interact with the contract.
+
+
+```contract address 0x9fE46736679d2D9a65F0992F2272dE9f3c7fa6e0```
+
+``` cast send 0x9fE46736679d2D9a65F0992F2272dE9f3c7fa6e0  "store(uint256)" 123 --rpc-url $RPC_URL  --private-key $PRIVATE_KEY ```
