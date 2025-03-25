@@ -86,3 +86,22 @@ Installing foundry forge-std for deployment on terminal
 ``` forge script scripts/<Deployment script name>.sol --rpc-url <RPC URL> --broadcast --private-key <key> ```
 
 Note: ``` Use keystore file or --interactive for deploying contract with real money. ```
+
+### Encrypting Key with Cast Wallet
+
+```cast wallet import defaultKey --interactive```
+```Enter private key: <Enter you private key> ```
+```Enter your password: <Enter password>```
+
+
+You can check your wallet through 
+``` cast wallet list ```
+
+
+### Using the encrypted key in your project
+
+```forge script script/<deployscriptname>:function --rpc-url <RPC URL>  --account defaultKey --sender <Address associated with private key> --broadcast -vvvv ```
+
+
+After this you will enter your keystore password.
+
