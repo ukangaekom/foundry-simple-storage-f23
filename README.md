@@ -65,14 +65,24 @@ $ anvil --help
 $ cast --help
 ```
 
+### Conversion
+For converting hex to number, use cast
+
+``` cast --to-base 0x02a2```
+
 ### How to Deploy
 
 Installing foundry forge-std for deployment on terminal
 
 ``` forge install foundry-rs/forge-std --no-commit ```
 
-``` forge create simpleStorage --rpc-url <IP ADDRESS> --interactive```
+``` forge create simpleStorage --rpc-url <IP ADDRESS> --interactive ```
 
 ### How to Deploy with Script 
 
-``` forge script scripts/<Deployment script name>.sol  --rpc-url <RPC URL>```
+``` forge script scripts/<Deployment script name>.sol  --rpc-url <RPC URL> ```
+
+
+``` forge script scripts/<Deployment script name>.sol --rpc-url <RPC URL> --broadcast --private-key <key> ```
+
+Note: ``` Use keystore file or --interactive for deploying contract with real money. ```
